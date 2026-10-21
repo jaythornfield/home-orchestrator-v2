@@ -1,0 +1,663 @@
+{
+  "schema_version": "HO2_REVIEW_SAFE_V1",
+  "record_origins": [
+    "APPLICATION",
+    "CLIENT",
+    "DERIVED",
+    "MANUAL",
+    "OS_HANDLE",
+    "SERVER"
+  ],
+  "events": {
+    "SOURCE": [
+      {
+        "tick": [
+          "int",
+          0,
+          1000000
+        ],
+        "profile": [
+          "enum",
+          [
+            "AUTONOMY",
+            "CHILD",
+            "FENCED_RECOVERY",
+            "GUEST",
+            "NONE",
+            "OBJECTION",
+            "REVOKE",
+            "REVOKE_UNKNOWN",
+            "S5_EXACT_CHILD",
+            "S5_EXACT_CHILD_LIFT",
+            "S5_EXACT_GUEST",
+            "S5_EXACT_GUEST_LIFT",
+            "S5_EXACT_OBJECTION",
+            "S5_EXACT_OBJECTION_LIFT",
+            "S5_THIRD_A",
+            "S5_THIRD_A_REVOKE",
+            "S5_THIRD_A_UNKNOWN",
+            "UNKNOWN",
+            "UNSUPPORTED"
+          ]
+        ],
+        "admitted": [
+          "bool"
+        ]
+      },
+      {}
+    ],
+    "BASELINE": [
+      {
+        "default_deadline_seconds": [
+          "int",
+          1,
+          86400
+        ],
+        "deadline_clock": [
+          "enum",
+          [
+            "LAUNCHER_START",
+            "TEST_START",
+            "WORKER_READY"
+          ]
+        ],
+        "accelerated_test": [
+          "bool"
+        ],
+        "phase": [
+          "enum",
+          [
+            "CLOSED",
+            "CLOSING",
+            "FAILED_HOLD",
+            "FINISHED",
+            "HOLD",
+            "NOT_STARTED",
+            "PREPARING",
+            "READY",
+            "RUNNING",
+            "STARTING",
+            "STOPPED"
+          ]
+        ]
+      },
+      {}
+    ],
+    "REQUEST": [
+      {
+        "route": [
+          "enum",
+          [
+            "CLIENT_EVENT",
+            "HEALTH",
+            "OTHER",
+            "RESET",
+            "SESSION",
+            "START",
+            "STATUS",
+            "STOP_APP",
+            "STOP_DEMO"
+          ]
+        ],
+        "result": [
+          "enum",
+          [
+            "ACCEPTED",
+            "ALREADY_STARTED_OTHER_PROFILE",
+            "AUDIT_UNAVAILABLE",
+            "AUTH_REJECTED",
+            "AUXILIARY_FAILED",
+            "CREATED",
+            "IDEMPOTENT_EXISTING",
+            "INVALID_SCHEMA",
+            "NETWORK_UNAVAILABLE",
+            "NOT_REACHED",
+            "ORIGIN_REJECTED",
+            "PROFILE_REJECTED",
+            "RECEIVED",
+            "REJECTED",
+            "RUNTIME_MISMATCH",
+            "SESSION_EXPIRED",
+            "STOPPING",
+            "TIMEOUT",
+            "UNKNOWN"
+          ]
+        ],
+        "http_status": [
+          "int",
+          0,
+          599
+        ],
+        "entered_session": [
+          "bool"
+        ],
+        "entered_start": [
+          "bool"
+        ],
+        "scene_match": [
+          "bool"
+        ]
+      },
+      {
+        "request_alias": [
+          "alias",
+          "request"
+        ]
+      }
+    ],
+    "CLIENT": [
+      {
+        "gesture": [
+          "enum",
+          [
+            "REFRESH",
+            "RESET",
+            "SELECT_PROFILE",
+            "START",
+            "STOP_APP",
+            "UNLOCK"
+          ]
+        ],
+        "result": [
+          "enum",
+          [
+            "ACCEPTED",
+            "ALREADY_STARTED_OTHER_PROFILE",
+            "AUDIT_UNAVAILABLE",
+            "AUTH_REJECTED",
+            "AUXILIARY_FAILED",
+            "CREATED",
+            "IDEMPOTENT_EXISTING",
+            "INVALID_SCHEMA",
+            "NETWORK_UNAVAILABLE",
+            "NOT_REACHED",
+            "ORIGIN_REJECTED",
+            "PROFILE_REJECTED",
+            "RECEIVED",
+            "REJECTED",
+            "RUNTIME_MISMATCH",
+            "SESSION_EXPIRED",
+            "STOPPING",
+            "TIMEOUT",
+            "UNKNOWN"
+          ]
+        ]
+      },
+      {
+        "request_alias": [
+          "alias",
+          "request"
+        ]
+      }
+    ],
+    "BUSINESS": [
+      {
+        "profile": [
+          "enum",
+          [
+            "AUTONOMY",
+            "CHILD",
+            "FENCED_RECOVERY",
+            "GUEST",
+            "NONE",
+            "OBJECTION",
+            "REVOKE",
+            "REVOKE_UNKNOWN",
+            "S5_EXACT_CHILD",
+            "S5_EXACT_CHILD_LIFT",
+            "S5_EXACT_GUEST",
+            "S5_EXACT_GUEST_LIFT",
+            "S5_EXACT_OBJECTION",
+            "S5_EXACT_OBJECTION_LIFT",
+            "S5_THIRD_A",
+            "S5_THIRD_A_REVOKE",
+            "S5_THIRD_A_UNKNOWN",
+            "UNKNOWN",
+            "UNSUPPORTED"
+          ]
+        ],
+        "phase": [
+          "enum",
+          [
+            "CLOSED",
+            "CLOSING",
+            "FAILED_HOLD",
+            "FINISHED",
+            "HOLD",
+            "NOT_STARTED",
+            "PREPARING",
+            "READY",
+            "RUNNING",
+            "STARTING",
+            "STOPPED"
+          ]
+        ],
+        "effects": [
+          "int",
+          0,
+          1000000000
+        ],
+        "roots": [
+          "int",
+          0,
+          1000000000
+        ],
+        "approvals": [
+          "int",
+          0,
+          1000000000
+        ],
+        "version": [
+          "int",
+          0,
+          1000000000
+        ]
+      },
+      {
+        "episodes": [
+          "int",
+          0,
+          1000000000
+        ],
+        "sources": [
+          "int",
+          0,
+          1000000000
+        ],
+        "root_alias": [
+          "alias",
+          "root"
+        ],
+        "episode_alias": [
+          "alias",
+          "episode"
+        ],
+        "action": [
+          "enum",
+          [
+            "A",
+            "B",
+            "FENCE",
+            "NONE",
+            "QUERY",
+            "RECOVER",
+            "REVOKE"
+          ]
+        ],
+        "status": [
+          "enum",
+          [
+            "APPLIED",
+            "HOLD",
+            "NONE",
+            "NOT_APPLIED",
+            "PENDING",
+            "REJECTED",
+            "UNKNOWN"
+          ]
+        ],
+        "decision": [
+          "enum",
+          [
+            "AFFECTED_HOLD",
+            "ALLOW",
+            "AUTHORIZATION_HOLD",
+            "FENCE_REQUIRED",
+            "NONE",
+            "OBJECTION_HOLD",
+            "OTHER_HOLD",
+            "PRIVACY_HOLD",
+            "REVOKED",
+            "SAFETY_HOLD",
+            "UNKNOWN_HOLD"
+          ]
+        ],
+        "queries": [
+          "int",
+          0,
+          1000000000
+        ],
+        "submissions": [
+          "int",
+          0,
+          1000000000
+        ],
+        "confirmed_version": [
+          "int",
+          0,
+          1000000000
+        ],
+        "setting": [
+          "enum",
+          [
+            "A",
+            "B",
+            "NONE"
+          ]
+        ]
+      }
+    ],
+    "SCENE": [
+      {
+        "transition": [
+          "enum",
+          [
+            "IDENTITY_REFRESHED",
+            "RESET_BEGIN",
+            "RESET_COMMITTED",
+            "RESET_REJECTED",
+            "SESSION_CLEARED"
+          ]
+        ],
+        "profile": [
+          "enum",
+          [
+            "AUTONOMY",
+            "CHILD",
+            "FENCED_RECOVERY",
+            "GUEST",
+            "NONE",
+            "OBJECTION",
+            "REVOKE",
+            "REVOKE_UNKNOWN",
+            "S5_EXACT_CHILD",
+            "S5_EXACT_CHILD_LIFT",
+            "S5_EXACT_GUEST",
+            "S5_EXACT_GUEST_LIFT",
+            "S5_EXACT_OBJECTION",
+            "S5_EXACT_OBJECTION_LIFT",
+            "S5_THIRD_A",
+            "S5_THIRD_A_REVOKE",
+            "S5_THIRD_A_UNKNOWN",
+            "UNKNOWN",
+            "UNSUPPORTED"
+          ]
+        ],
+        "sessions_invalidated": [
+          "bool"
+        ]
+      },
+      {
+        "previous_scene_alias": [
+          "alias",
+          "scene"
+        ]
+      }
+    ],
+    "STOP": [
+      {
+        "requested_by": [
+          "enum",
+          [
+            "AUDIT",
+            "DEADLINE",
+            "NONE",
+            "PAGE",
+            "PARENT",
+            "SAFETY",
+            "TEST",
+            "USER_CONSOLE"
+          ]
+        ],
+        "initiating_reason": [
+          "enum",
+          [
+            "AUDIT_FAILURE",
+            "INTERNAL_ERROR",
+            "NATURAL_DEADLINE",
+            "NONE",
+            "OPERATOR_STOP",
+            "PAGE_STOP",
+            "PARENT_INPUT_EOF",
+            "PREPARATION_CANCELLED",
+            "SAFETY_CONTROL_FAILURE",
+            "STARTUP_FAILURE",
+            "UNKNOWN",
+            "WORKER_FAILURE"
+          ]
+        ],
+        "forwarded_reason": [
+          "enum",
+          [
+            "AUDIT_FAILURE",
+            "INTERNAL_ERROR",
+            "NATURAL_DEADLINE",
+            "NONE",
+            "OPERATOR_STOP",
+            "PAGE_STOP",
+            "PARENT_INPUT_EOF",
+            "PREPARATION_CANCELLED",
+            "SAFETY_CONTROL_FAILURE",
+            "STARTUP_FAILURE",
+            "UNKNOWN",
+            "WORKER_FAILURE"
+          ]
+        ],
+        "observed_reason": [
+          "enum",
+          [
+            "AUDIT_FAILURE",
+            "INTERNAL_ERROR",
+            "NATURAL_DEADLINE",
+            "NONE",
+            "OPERATOR_STOP",
+            "PAGE_STOP",
+            "PARENT_INPUT_EOF",
+            "PREPARATION_CANCELLED",
+            "SAFETY_CONTROL_FAILURE",
+            "STARTUP_FAILURE",
+            "UNKNOWN",
+            "WORKER_FAILURE"
+          ]
+        ],
+        "acknowledged": [
+          "bool"
+        ],
+        "stage": [
+          "enum",
+          [
+            "CLEANED",
+            "CLOSING",
+            "CONSUMED",
+            "EVIDENCE_MISSING",
+            "FAILED_HOLD",
+            "REQUESTED"
+          ]
+        ],
+        "cleanup_complete": [
+          "bool"
+        ]
+      },
+      {
+        "default_deadline_seconds": [
+          "int",
+          1,
+          86400
+        ],
+        "remaining_seconds": [
+          "int",
+          0,
+          86400
+        ],
+        "socket_closed": [
+          "bool"
+        ],
+        "operator_stop_applicable": [
+          "bool"
+        ],
+        "worker_created": [
+          "bool"
+        ],
+        "prepared_files_checked": [
+          "int",
+          0,
+          1000000000
+        ],
+        "failure_stage": [
+          "enum",
+          [
+            "CONSTRUCT",
+            "EXPORT",
+            "READ",
+            "VALIDATE",
+            "WRITE"
+          ]
+        ],
+        "failure_code": [
+          "enum",
+          [
+            "CONTEXT_MISMATCH",
+            "DOCUMENT_EXISTS",
+            "DUPLICATE_FIELD",
+            "INVALID_ALIAS",
+            "INVALID_JSON",
+            "INVALID_ORIGIN",
+            "INVALID_PATH",
+            "INVALID_SEQUENCE",
+            "INVALID_TYPE",
+            "INVALID_VALUE",
+            "MISSING_FIELDS",
+            "READ_FAILED",
+            "RECORD_LIMIT",
+            "REPARSE_PATH",
+            "SIZE_LIMIT",
+            "UNAPPROVED_ARTIFACT",
+            "UNKNOWN_EVENT",
+            "UNKNOWN_FIELDS",
+            "WRITER_FAILED",
+            "WRITE_FAILED"
+          ]
+        ],
+        "artifact_alias": [
+          "alias",
+          "artifact"
+        ]
+      }
+    ],
+    "NATIVE": [
+      {
+        "process_alias": [
+          "alias",
+          "process"
+        ],
+        "observation_method": [
+          "enum",
+          [
+            "APPLICATION_SELF",
+            "CREATOR_PROCESS_HANDLE",
+            "NOT_OBSERVED"
+          ]
+        ],
+        "native_exit_observed": [
+          "bool"
+        ]
+      },
+      {
+        "native_exit_code": [
+          "int",
+          -2147483648,
+          4294967295
+        ],
+        "socket_closed": [
+          "bool"
+        ]
+      }
+    ],
+    "PORT": [
+      {
+        "observation_method": [
+          "enum",
+          [
+            "LOOPBACK_CONNECT",
+            "NOT_TESTED"
+          ]
+        ],
+        "classification": [
+          "enum",
+          [
+            "ACCESS_DENIED",
+            "CONNECTED",
+            "CONNECTION_REFUSED",
+            "NOT_TESTED",
+            "OTHER_ERROR",
+            "TIMEOUT"
+          ]
+        ],
+        "duration_ms": [
+          "int",
+          0,
+          30000
+        ]
+      },
+      {
+        "actual_errno": [
+          "int",
+          0,
+          2147483647
+        ],
+        "socket_closed": [
+          "bool"
+        ]
+      }
+    ],
+    "QUALITY": [
+      {
+        "artifact_alias": [
+          "alias",
+          "artifact"
+        ],
+        "stage": [
+          "enum",
+          [
+            "CONSTRUCT",
+            "EXPORT",
+            "READ",
+            "VALIDATE",
+            "WRITE"
+          ]
+        ],
+        "issue": [
+          "enum",
+          [
+            "DUPLICATE_FIELD",
+            "INVALID_JSON",
+            "INVALID_SEQUENCE",
+            "INVALID_TYPE",
+            "INVALID_VALUE",
+            "MISSING_FIELDS",
+            "NONE",
+            "READ_FAILED",
+            "RECORD_LIMIT",
+            "SIZE_LIMIT",
+            "TRUNCATED",
+            "UNKNOWN_FIELDS",
+            "WRITE_FAILED"
+          ]
+        ],
+        "dropped_records": [
+          "int",
+          0,
+          10000
+        ],
+        "truncated": [
+          "bool"
+        ]
+      },
+      {}
+    ]
+  },
+  "max_record_bytes": 4096,
+  "max_file_bytes": 4194304,
+  "max_records": 10000,
+  "export_names": [
+    "emergency.json",
+    "events.jsonl",
+    "identity.json",
+    "lifecycle.json"
+  ],
+  "package_sha256_semantics": "SHA256 of PACKAGE_INTEGRITY.json bytes; final ZIP SHA is independently bound by external observer",
+  "forbidden": "No request body, key, cookie, stdout, private/native identity or free exception text",
+  "confirmation": "Per-root APPLIED requires confirmed_version; resource version is separate",
+  "time": "Each writer uses its own monotonic origin. No uncalibrated cross-writer duration comparison.",
+  "scope": "Synthetic local preview receipts; not household member identity or physical device proof"
+}

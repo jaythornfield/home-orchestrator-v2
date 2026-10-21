@@ -1,0 +1,78 @@
+:root {
+  color-scheme: light;
+  font-family: Inter, ui-sans-serif, system-ui, sans-serif;
+  background: #F7F2E9;
+  color: #352C26;
+  font-size: 16px;
+  --page: #F7F2E9;
+  --card: #FFFDF8;
+  --field: #FFFFFF;
+  --text: #352C26;
+  --muted: #6F6257;
+  --border: #E5D8CB;
+  --control-border: #978574;
+  --primary: #A94E32;
+  --primary-hover: #8B3D28;
+  --success: #49654B;
+  --success-bg: #EAF0E4;
+  --warning: #83520E;
+  --warning-bg: #FFF0CE;
+  --danger: #A43C3C;
+  --danger-bg: #FBECEA;
+  --disabled-bg: #E8DFD3;
+  --disabled-text: #74685C;
+}
+* { box-sizing: border-box; }
+[hidden] { display: none !important; }
+body { margin: 0; background: var(--page); min-height: 100vh; line-height: 1.5; }
+.shell { max-width: 1320px; margin: 0 auto; padding: 2rem 1.5rem 4rem; }
+header a { color: var(--primary); text-decoration: none; font-size: 1rem; }
+header a:hover { text-decoration: underline; }
+.eyebrow { color: var(--primary); letter-spacing: .1em; font-size: .8rem; font-weight: 700; margin: 2rem 0 .5rem; }
+h1 { font-size: clamp(2rem, 4vw, 3.5rem); line-height: 1.1; margin: 0; max-width: 900px; }
+.lede { color: var(--muted); max-width: 850px; line-height: 1.6; margin: 1rem 0 1.5rem; }
+.toolbar { display: flex; flex-wrap: wrap; align-items: center; gap: .75rem 1rem; margin: 1.5rem 0; }
+.toolbar > * { min-width: 0; }
+#identity-status { flex: 1 1 16rem; }
+#stream-status { color: var(--success); }
+.notice { border: 1px solid var(--warning); color: var(--warning); background: var(--warning-bg); padding: 1rem 1.25rem; border-radius: .65rem; margin: 1.5rem 0; }
+.grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); align-items: start; gap: 1.25rem; }
+.card { min-width: 0; background: var(--card); border: 1px solid var(--border); border-radius: .75rem; padding: 1.5rem; box-shadow: 0 .35rem 1.2rem rgba(53,44,38,.045); }
+.wide { grid-column: 1 / -1; }
+.danger { border-color: var(--danger); }
+h2 { margin: 0 0 1rem; font-size: 1.2rem; line-height: 1.35; }
+h3 { font-size: 1rem; margin: 1.5rem 0 .75rem; }
+form, label { display: grid; grid-template-columns: minmax(0, 1fr); min-width: 0; }
+form { gap: 1rem; }
+label { gap: .4rem; color: var(--muted); font-size: 1rem; }
+input, select, button { font: inherit; border-radius: .45rem; min-height: 2.75rem; min-width: 0; max-width: 100%; }
+input, select { width: 100%; background: var(--field); color: var(--text); border: 1px solid var(--control-border); padding: .6rem .75rem; }
+button { background: var(--primary); color: #FFFFFF; border: 1px solid transparent; padding: .6rem .9rem; cursor: pointer; font-weight: 700; line-height: 1.4; white-space: normal; overflow-wrap: anywhere; }
+form button { width: 100%; }
+button:hover:not(:disabled) { background: var(--primary-hover); }
+.danger button, button[data-resolution="reject"], button[data-revoke-memory], button[data-reconcile="FAILURE"] { background: var(--danger); }
+.danger button:hover:not(:disabled), button[data-resolution="reject"]:hover:not(:disabled), button[data-revoke-memory]:hover:not(:disabled), button[data-reconcile="FAILURE"]:hover:not(:disabled) { background: #8C3030; }
+button:disabled, input:disabled, select:disabled { background: var(--disabled-bg); color: var(--disabled-text); border-color: #C5B8A8; cursor: not-allowed; opacity: 1; }
+a:focus-visible, input:focus-visible, select:focus-visible, button:focus-visible { outline: 3px solid var(--primary); outline-offset: 3px; }
+.hint { color: var(--muted); font-size: 1rem; }
+.mono { font-family: ui-monospace, monospace; color: var(--muted); font-size: .875rem; }
+p, li, .mono, .results, .hint { overflow-wrap: anywhere; }
+ul { padding-left: 1.4rem; }
+li { margin: .65rem 0; }
+li button { margin: .5rem .25rem .25rem 0; }
+#decisions button { margin: .25rem .25rem .25rem 0; }
+.results { min-height: 1.2rem; line-height: 1.55; color: var(--text); }
+#changes:not(:empty), #explanation:not(:empty), #receipt:not(:empty) { margin: 1rem 0; }
+#message { min-height: 1.4rem; margin-top: 1.5rem; color: var(--success); }
+#message:not(:empty) { padding: .85rem 1rem; border: 1px solid var(--success); background: var(--success-bg); border-radius: .6rem; }
+.error { color: var(--danger) !important; }
+#message.error:not(:empty) { border-color: var(--danger); background: var(--danger-bg); }
+@media (max-width: 1000px) {
+  .grid { grid-template-columns: minmax(0, 1fr); }
+  .wide { grid-column: auto; }
+}
+@media (max-width: 620px) {
+  .shell { padding: 1rem 1rem 3rem; }
+  .card { padding: 1.1rem; }
+  .eyebrow { margin-top: 1.25rem; }
+}

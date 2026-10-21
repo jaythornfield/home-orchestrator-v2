@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Home Orchestrator · Autonomous dinner preview</title>
+  <link rel="stylesheet" href="/assets/rev2.css"><link rel="stylesheet" href="/assets/synthetic_demo.css">
+  <script defer src="/assets/synthetic_demo.js"></script>
+</head>
+<body>
+<main class="shell">
+  <header class="demo-header">
+    <p class="eyebrow">HOME ORCHESTRATOR v2</p>
+    <span class="scope-label">OFFLINE REPLAY · SYNTHETIC ONLY</span>
+    <h1>One shared evening.<br>Coordination that continues.</h1>
+    <p class="lede">Alex and Jordan have a shared Dinner plan. A bounded standing authorization lets the household coordinator respond to a new need without asking for each action again.</p>
+  </header>
+  <section class="notice"><strong>ISOLATED PREVIEW.</strong> All people, permissions and effects here are synthetic. This preview does not connect to household devices or Alexa. Formal product validation is pending.</section>
+  <section class="card preview-controls">
+    <div id="access-panel">
+      <h2>Local preview access</h2>
+      <form id="access-form"><label>This process’s preview code <input id="preview-key" type="password" autocomplete="off" required></label><button id="unlock-preview" type="submit">Unlock preview controls</button></form>
+      <p class="hint">The local startup code controls this preview. It does not authenticate a household member or open private content.</p>
+    </div>
+    <div id="start-panel">
+      <h2>Start one isolated household preview</h2>
+      <form id="start-form"><label>Controlled event source <select id="profile"><option value="AUTONOMY">A new need after the first effect</option><option value="OBJECTION">Shared effect blocked by an objection</option><option value="GUEST">A newly affected guest is not covered</option><option value="UNKNOWN">Unconfirmed first effect stays on its original root</option><option value="S5_THIRD_A" selected>Third distinct comfort action under one authorization</option><option value="S5_EXACT_OBJECTION">Third action held by a physical objection</option><option value="S5_EXACT_GUEST">Third action held by an uncovered guest</option><option value="S5_EXACT_CHILD">Third action held by an uncovered child</option><option value="S5_EXACT_OBJECTION_LIFT">Third action resumes after the objection is withdrawn</option><option value="S5_EXACT_GUEST_LIFT">Third action resumes after the guest lawfully leaves</option><option value="S5_EXACT_CHILD_LIFT">Third action resumes after the child lawfully leaves</option><option value="S5_THIRD_A_REVOKE">Revocation prevents the third action</option><option value="S5_THIRD_A_UNKNOWN">Unconfirmed third action stays on its original root</option></select></label><button id="start-preview" type="button">Start synthetic preview</button></form>
+      <p class="hint">One start cues the trusted source. Subsequent actions happen in the background; there are no per-action approve buttons.</p>
+    </div>
+    <div class="app-controls"><button id="stop-demo" type="button" disabled>Stop current demo</button> <button id="new-scene" type="button" disabled>Choose a new scene</button> <button id="stop-app" type="button" disabled>Stop app</button></div>
+    <p>Service: <strong id="service-state">Connecting</strong> · Build <span id="build-id"></span></p>
+    <p class="hint">Get the local preview code from the launch window. Unlock only restores controls. Use STOP in that window to close the app at any time.</p>
+    <p id="safety-time" class="hint" role="status">Safety limit: 30 minutes from app launch. Changing scenes does not restart it.</p>
+    <p id="control-message" role="status" aria-live="polite"></p>
+  </section>
+  <section class="demo-metrics" aria-label="Actual backend metrics">
+    <article><span>Autonomous effects</span><strong id="effects">0</strong></article>
+    <article><span>Per-action approvals</span><strong id="approvals">0</strong></article>
+    <article><span>Distinct command roots</span><strong id="roots">0</strong></article>
+  </section>
+  <section class="grid">
+    <article class="card"><h2>Household</h2><p class="household-names">Alex <span>&amp;</span> Jordan</p><p>Current activity: <strong id="background">Dinner</strong></p><p id="phase">Not started</p><details><summary>Isolated run</summary><p class="mono" id="runtime-id"></p></details></article>
+    <article class="card resource-card"><h2>Shared lounge resource</h2><p class="resource-setting" id="setting">REST</p><p>Trusted state version: <strong id="state-version">0</strong></p><p class="hint">One virtual lounge, with symbolic comfort settings only.</p></article>
+    <article class="card"><h2>Standing authorization</h2><div id="authorization"><p class="hint">Two virtual issuers establish one bounded envelope when the source starts.</p></div></article>
+    <article class="card"><h2>Current need</h2><p id="need">Waiting for a trusted observation.</p><p class="hint" id="need-source"></p><h3>Safety decision</h3><p id="decision" role="status" aria-live="polite">NOT_STARTED</p></article>
+    <article class="card wide"><h2>Autonomous actions</h2><div id="actions"><p class="hint">Actions will appear from the actual executor journal.</p></div></article>
+    <article class="card wide"><h2>Audit timeline</h2><p class="hint">Trusted facts → autonomous admission → virtual submission → authority confirmation. Private reasons and source locators are omitted.</p><ol id="timeline" class="timeline"></ol></article>
+  </section>
+  <footer>Public preview projection only. Member PRIVATE identity switching and full cross-process recovery are not offered or proven here.</footer>
+</main>
+</body>
+</html>

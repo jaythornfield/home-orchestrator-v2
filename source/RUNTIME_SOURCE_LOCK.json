@@ -1,0 +1,161 @@
+{
+  "runtime": {
+    "name": "CPython",
+    "version": "3.12.10",
+    "architecture": "Windows x64",
+    "filename": "python-3.12.10-embed-amd64.zip",
+    "url": "https://www.python.org/ftp/python/3.12.10/python-3.12.10-embed-amd64.zip",
+    "bytes": 11133606,
+    "sha256": "4ACBED6DD1C744B0376E3B1CF57CE906F9DC9E95E68824584C8099A63025A3C3",
+    "official_spdx_sha256": "4acbed6dd1c744b0376e3b1cf57ce906f9dc9e95e68824584c8099a63025a3c3",
+    "md5": "FE8EF205F2E9C3BA44D0CF9954E1ABD3",
+    "official_release_md5": "fe8ef205f2e9c3ba44d0cf9954e1abd3",
+    "license": "PSF-2.0 plus bundled notices",
+    "signature_status": "DOWNLOADED_NOT_CRYPTOGRAPHICALLY_VERIFIED"
+  },
+  "wheels": [
+    {
+      "name": "annotated-doc",
+      "version": "0.0.5",
+      "filename": "annotated_doc-0.0.5-py3-none-any.whl",
+      "bytes": 5302,
+      "sha256": "117BAC03A25EDE5DF5440E855B32D556049CA169EAD221505BADF432FED4B101",
+      "upstream_sha256": "117bac03a25ede5df5440e855b32d556049ca169ead221505badf432fed4b101",
+      "url": "https://files.pythonhosted.org/packages/3e/30/e900b21425a860e195f32e37657aa1f7c7f2b1bfb26f03ca209b90933c06/annotated_doc-0.0.5-py3-none-any.whl",
+      "license_expression": "MIT",
+      "license_legacy": null
+    },
+    {
+      "name": "annotated-types",
+      "version": "0.8.0",
+      "filename": "annotated_types-0.8.0-py3-none-any.whl",
+      "bytes": 13427,
+      "sha256": "F072F4D804EA359E4EAF198B1AF7A8B0943881A87F31BB764F8BF219BB9419E0",
+      "upstream_sha256": "f072f4d804ea359e4eaf198b1af7a8b0943881a87f31bb764f8bf219bb9419e0",
+      "url": "https://files.pythonhosted.org/packages/99/91/8acff4f5e50511b911bbccb72b8628a49c68ce14148cd9f6431094859a90/annotated_types-0.8.0-py3-none-any.whl",
+      "license_expression": "MIT",
+      "license_legacy": null
+    },
+    {
+      "name": "anyio",
+      "version": "4.15.1",
+      "filename": "anyio-4.15.1-py3-none-any.whl",
+      "bytes": 132079,
+      "sha256": "6152FDBBF9A77FDEC97731721BEBF7C4C44F7C29B424B0065826173EFC7ED101",
+      "upstream_sha256": "6152fdbbf9a77fdec97731721bebf7c4c44f7c29b424b0065826173efc7ed101",
+      "url": "https://files.pythonhosted.org/packages/12/b8/4bd346e22b28902df4d651910f5242c28d84e4a5c2435ca5c3f797ed7e2e/anyio-4.15.1-py3-none-any.whl",
+      "license_expression": "MIT",
+      "license_legacy": null
+    },
+    {
+      "name": "click",
+      "version": "8.5.0",
+      "filename": "click-8.5.0-py3-none-any.whl",
+      "bytes": 125251,
+      "sha256": "255BC9599CF7748B4B1A446CCC735421BD08A2AE529A8B88597D3DE5664EE360",
+      "upstream_sha256": "255bc9599cf7748b4b1a446ccc735421bd08a2ae529a8b88597d3de5664ee360",
+      "url": "https://files.pythonhosted.org/packages/58/50/6c0d534c5f134586a8e1ba4e330569e32f057e33372ae556463212fb4cd3/click-8.5.0-py3-none-any.whl",
+      "license_expression": "BSD-3-Clause",
+      "license_legacy": null
+    },
+    {
+      "name": "fastapi",
+      "version": "0.139.2",
+      "filename": "fastapi-0.139.2-py3-none-any.whl",
+      "bytes": 130234,
+      "sha256": "B9AD015A835173D59865E2F5D8296FBC2B317BF56A2BA1A5BFBDD03DE2FD4B1C",
+      "upstream_sha256": "b9ad015a835173d59865e2f5d8296fbc2b317bf56a2ba1a5bfbdd03de2fd4b1c",
+      "url": "https://files.pythonhosted.org/packages/5f/c7/cb03251d9dfb177246a9809a76f189d21df32dbd4a845951881d11323b7f/fastapi-0.139.2-py3-none-any.whl",
+      "license_expression": "MIT",
+      "license_legacy": null
+    },
+    {
+      "name": "h11",
+      "version": "0.16.0",
+      "filename": "h11-0.16.0-py3-none-any.whl",
+      "bytes": 37515,
+      "sha256": "63CF8BBE7522DE3BF65932FDA1D9C2772064FFB3DAE62D55932DA54B31CB6C86",
+      "upstream_sha256": "63cf8bbe7522de3bf65932fda1d9c2772064ffb3dae62d55932da54b31cb6c86",
+      "url": "https://files.pythonhosted.org/packages/04/4b/29cac41a4d98d144bf5f6d33995617b185d14b22401f75ca86f384e87ff1/h11-0.16.0-py3-none-any.whl",
+      "license_expression": null,
+      "license_legacy": "MIT"
+    },
+    {
+      "name": "idna",
+      "version": "3.20",
+      "filename": "idna-3.20-py3-none-any.whl",
+      "bytes": 69583,
+      "sha256": "AB7AE7122974553370F0BDB919E1A960B2CD1BC1EF0276416D896DB81C14582C",
+      "upstream_sha256": "ab7ae7122974553370f0bdb919e1a960b2cd1bc1ef0276416d896db81c14582c",
+      "url": "https://files.pythonhosted.org/packages/58/a2/bb081bab032533a855d44de1d56f8e8426114ff1ba5d1f07a438a0a654f8/idna-3.20-py3-none-any.whl",
+      "license_expression": "BSD-3-Clause",
+      "license_legacy": null
+    },
+    {
+      "name": "pydantic",
+      "version": "2.13.4",
+      "filename": "pydantic-2.13.4-py3-none-any.whl",
+      "bytes": 472262,
+      "sha256": "45A282CDE31D808236FD7EA9D919B128653C8B38B393D1C4AB335C62924D9ABA",
+      "upstream_sha256": "45a282cde31d808236fd7ea9d919b128653c8b38b393d1c4ab335c62924d9aba",
+      "url": "https://files.pythonhosted.org/packages/fd/7b/122376b1fd3c62c1ed9dc80c931ace4844b3c55407b6fb2d199377c9736f/pydantic-2.13.4-py3-none-any.whl",
+      "license_expression": "MIT",
+      "license_legacy": null
+    },
+    {
+      "name": "pydantic_core",
+      "version": "2.46.4",
+      "filename": "pydantic_core-2.46.4-cp312-cp312-win_amd64.whl",
+      "bytes": 2072919,
+      "sha256": "E9C26F834C65F5752F3F06CB08CB86A913CEB7274D0DB6E267808A708B46BC89",
+      "upstream_sha256": "e9c26f834c65f5752f3f06cb08cb86a913ceb7274d0db6e267808a708b46bc89",
+      "url": "https://files.pythonhosted.org/packages/40/8c/985c1d41ea1107c2534abd9870e4ed5c8e7669b5c308297835c001e7a1c4/pydantic_core-2.46.4-cp312-cp312-win_amd64.whl",
+      "license_expression": "MIT",
+      "license_legacy": null
+    },
+    {
+      "name": "starlette",
+      "version": "1.3.1",
+      "filename": "starlette-1.3.1-py3-none-any.whl",
+      "bytes": 73632,
+      "sha256": "C7372AAE11C3C3F26A42DF7BD626CEC2F47D03483D261D369516A615A53714C6",
+      "upstream_sha256": "c7372aae11c3c3f26a42df7bd626cec2f47d03483d261d369516a615a53714c6",
+      "url": "https://files.pythonhosted.org/packages/ec/bb/2799cc2ede3ed41131f8975621e7213dfc7ef4acbbaadfa440f32500c370/starlette-1.3.1-py3-none-any.whl",
+      "license_expression": "BSD-3-Clause",
+      "license_legacy": null
+    },
+    {
+      "name": "typing_extensions",
+      "version": "4.16.0",
+      "filename": "typing_extensions-4.16.0-py3-none-any.whl",
+      "bytes": 45571,
+      "sha256": "481CAA481374E813C1B176ADA14E97F1F67A4539CE9CFEB3F350D78D6370C2E8",
+      "upstream_sha256": "481caa481374e813c1b176ada14e97f1f67a4539ce9cfeb3f350d78d6370c2e8",
+      "url": "https://files.pythonhosted.org/packages/49/d3/b8441a820a491ddfc024b0b0cf0393375b75ea13866d9c66727e54c2fc80/typing_extensions-4.16.0-py3-none-any.whl",
+      "license_expression": "PSF-2.0",
+      "license_legacy": null
+    },
+    {
+      "name": "typing-inspection",
+      "version": "0.4.4",
+      "filename": "typing_inspection-0.4.4-py3-none-any.whl",
+      "bytes": 14750,
+      "sha256": "65B8397BA37CCBCE054456AACCDDFC91E6E3083C92824DF348D96CA832F3F147",
+      "upstream_sha256": "65b8397ba37ccbce054456aaccddfc91e6e3083c92824df348d96ca832f3f147",
+      "url": "https://files.pythonhosted.org/packages/67/81/4add07e5172b7ac40d8ed5ff580409a7801a4fe26d529bdd915401dabfbe/typing_inspection-0.4.4-py3-none-any.whl",
+      "license_expression": "MIT",
+      "license_legacy": null
+    },
+    {
+      "name": "uvicorn",
+      "version": "0.51.0",
+      "filename": "uvicorn-0.51.0-py3-none-any.whl",
+      "bytes": 73219,
+      "sha256": "5D38AF6CD620F2AE3849FB44FD4879E0890AA1FEBE8D47EB355FB45D93FE6A5B",
+      "upstream_sha256": "5d38af6cd620f2ae3849fb44fd4879e0890aa1febe8d47eb355fb45d93fe6a5b",
+      "url": "https://files.pythonhosted.org/packages/45/ec/dbb7e5a6b91f86bfb9eb7d2988a2730907b6a729875b949c7f022e8b88fa/uvicorn-0.51.0-py3-none-any.whl",
+      "license_expression": "BSD-3-Clause",
+      "license_legacy": null
+    }
+  ]
+}

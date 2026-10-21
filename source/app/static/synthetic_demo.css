@@ -1,0 +1,24 @@
+.demo-header { position: relative; padding-right: 2rem; }
+.scope-label { display: inline-block; color: var(--success); border: 1px solid var(--success); padding: .4rem .7rem; margin: 0 0 1.4rem; font-size: .8rem; letter-spacing: .06em; font-weight: 700; }
+.demo-header h1 { font-family: Georgia, 'Times New Roman', serif; font-weight: 500; max-width: 950px; }
+.preview-controls { margin: 1.2rem 0; }
+.preview-controls form { grid-template-columns: minmax(240px, 1fr) minmax(220px, auto); align-items: end; }
+.demo-metrics { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1.25rem; margin: 1.7rem 0; }
+.demo-metrics article { border-top: 3px solid var(--primary); padding: 1rem 1.2rem; background: var(--card); }
+.demo-metrics span { color: var(--muted); display: block; font-size: .95rem; }
+.demo-metrics strong { display: block; font-family: Georgia, serif; font-size: 3rem; line-height: 1.2; margin-top: .5rem; }
+.household-names { font-family: Georgia, serif; font-size: 2rem; margin: .5rem 0; }
+.household-names span { color: var(--primary); }
+.resource-card { border-top: 4px solid var(--success); }
+.resource-setting { color: var(--success); font-size: 2rem; font-weight: 700; margin: .8rem 0; overflow-wrap: anywhere; }
+.mono { font-family: Consolas, monospace; font-size: .8rem; overflow-wrap: anywhere; }
+.action-row { padding: 1rem 0; border-top: 1px solid var(--border); }
+.action-row:first-child { border-top: 0; }
+.action-title { font-size: 1.05rem; font-weight: 700; }
+.timeline { padding: 0; list-style: none; }
+.timeline li { padding: .55rem 0; border-bottom: 1px solid var(--border); font-size: .9rem; overflow-wrap: anywhere; }
+.timeline .tick { display: inline-block; min-width: 70px; color: var(--muted); font-family: Consolas, monospace; }
+#decision { color: var(--primary); font-weight: 700; overflow-wrap: anywhere; }
+footer { margin-top: 2rem; color: var(--muted); font-size: .85rem; }
+details { margin-top: .6rem; }
+@media (max-width: 760px) { .preview-controls form { grid-template-columns: 1fr; } .demo-metrics { gap: .5rem; } .demo-metrics article { padding: .7rem; } .demo-metrics span { font-size: .75rem; } .demo-metrics strong { font-size: 2.4rem; } }
